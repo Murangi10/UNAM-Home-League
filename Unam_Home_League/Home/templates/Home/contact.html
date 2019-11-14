@@ -1,0 +1,43 @@
+  {% extends 'base.html' %}
+  {% load static %}
+
+   
+   
+   {% block body %}
+   
+   <section id="inner-headline">
+      <div class="container">
+        <div class="row">
+          <div class="span4">
+            <div class="inner-heading">
+              <h2>GET IN TOUCH</h2>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <iframe src=" https://www.google.com/maps/place/University+of+Namibia/@-22.6121641,17.0561839,17z/data=!3m1!4b1!4m5!3m4!1s0x1c0b1af6df2e6629:0x8b4b657accaf67dd!8m2!3d-22.6121691!4d17.0583726 " width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+      
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <br>
+            <h4> <strong>Get in touch with us</strong></h4>
+          
+            <form method="POST" class="post-form">  
+              {% csrf_token %}  
+              {{ form.as_p }}  
+              <button type="submit" class="save btn btn-default">Save</button>  
+         </form>  
+        
+
+         </div>
+        </div>
+      </div>
+    </section>
+
+
+    {% endblock %}
+    

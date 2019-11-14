@@ -1,0 +1,220 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UNAM HOME LEAGUE | Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <!-- css -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700|Open+Sans:300,400,600,700" rel="stylesheet">
+  <link href="{% static 'Home/css/bootstrap.css' %}" rel="stylesheet" />
+  <link href="{% static 'Home/css/bootstrap-responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'Home/css/fancybox/jquery.fancybox.css' %}" rel="stylesheet">
+  <link href="{% static 'Home/css/jcarousel.css' %}" rel="stylesheet" />
+  <link href="{% static 'Home/css/flexslider.css' %}" rel="stylesheet" />
+  <link href="{% static 'Home/css/style.css' %}" rel="stylesheet" />
+  <!-- Theme skin -->
+  <link href="{% static 'Home/skins/red.css' %}" rel="stylesheet" />
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'Home/ico/apple-touch-icon-144-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'Home/ico/apple-touch-icon-114-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'Home/ico/apple-touch-icon-72-precomposed.png' %}" />
+  <link rel="apple-touch-icon-precomposed" href="{% static 'Home/ico/apple-touch-icon-57-precomposed.png' %}" />
+  <link rel="shortcut icon" href="{% static 'Home/ico/UNAM-icon.png' %}" />
+
+  <!-- =======================================================
+    Theme Name: Flattern
+    Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <div id="wrapper">
+    <!-- toggle top area -->
+    <div class="hidden-top">
+      <div class="hidden-top-inner container">
+        <div class="row">
+          <div class="span12">
+            <ul>
+              <li><strong>We are available for any custom works during working days</strong></li>
+              <li>Main office: UNAm Main Campus Gym Block G075</li>
+              <li>Call us <i class="icon-phone"></i> (061) 206 3017 - (061) 206 4567</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end toggle top area -->
+    <!-- start header -->
+    <header>
+      <div class="container ">
+        <!-- hidden top area toggle link -->
+        <div id="header-hidden-link">
+          <a href="#" class="toggle-link" title="Click me " data-target=".hidden-top"><i></i>Open</a>
+         
+        </div>
+        <br>
+            
+        <div class="row">
+          <div class="span4">
+            <div class="logo">
+              <br>
+              <a href="index.html"><img src="{% static 'Home/img/logo.png' %}" alt="" class="logo" /></a>
+              <h1 class="widgetheading">UNAM HOME LEAGUE</h1>
+            </div>
+          </div>
+          <div class="span8">
+            <div class="navbar navbar-static-top">
+              <div class="navigation">
+                <nav>
+                  <br>
+                  <ul class="nav topnav">
+                    <li class="dropdown">
+                      <a href="{% url 'index' %}">HOME</i></a>
+                      </li>
+                    <li>
+                        <a href="{% url 'about' %}">ABOUT</a>
+                      </li>
+                    <li class="dropdown">
+                      <a href="#">TEAMS <i class="icon-angle-down"></i></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="{% url 'bima' %}">Bima FC</a></li>
+                        <li><a href="{% url 'chipolopolo' %}">Chipolopolo FC</a></li>
+                        <li><a href="{% url 'rangers' %}">City Rangers FC</a></li>
+                        <li><a href="{% url 'flyzone' %}">Fly Zone FC</a></li>                       
+                                              
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="{% url 'fixtures' %}">FIXTURES</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'results' %}">RESULTS</a>
+                      
+                    </li>
+                    <li>
+                      <a href="{% url 'table' %}">TABLE</a>
+                      
+                    </li>
+                    <li>
+                        <a href="{% url 'gallery' %}">GALLERY</a>                        
+                      </li>
+                    <li>
+                      <a href="{% url 'contact' %}">CONTACT </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <!-- end navigation -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+        <div class="container">
+          <div class="row">
+            <div class="span3">
+              <div class="widget">
+                <h5 class="widgetheading">Browse pages</h5>
+                <ul class="link-list">
+                  <li><a href="http://www.unam.edu.na/">About UNAM</a></li>                  
+                  <li><a href="{% url 'about' %}">Meet our team</a></li>                                    
+                </ul>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="widget">
+                <h5 class="widgetheading">Sponsors</h5>
+                <ul class="link-list">
+                  <li><a href="https://www.python.org/">Python Software Foundation</a></li>
+                  <li><a href="https://pynamibia.org/">PYNAM Society</a></li>
+                  <li><a href="https://www.djangoproject.com/">Django Software Foundation</a></li>                  
+                </ul>
+              </div>
+            </div>
+           
+            <div class="span3">
+              <div class="widget">
+                <h5 class="widgetheading">Get in touch with us</h5>
+                <address>
+                                  <strong>UNAM Main Campus</strong><br>
+                                   Sports Office<br>
+                                   Gym Block G075
+                               </address>
+                <p>
+                  <i class="icon-phone"></i> (061) 206 3017 - (061) 206 4567 <br>
+                  <i class="icon-envelope-alt"></i> ufa@unam.na
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="sub-footer">
+          <div class="container">
+            <div class="row">
+              <div class="span6">
+                <div class="copyright">
+                  <p>
+                    <span>&copy; UNAM Football Association - All right reserved.</span>
+                  </p>
+                  <div class="credits">
+                    <!--
+                      All the links in the footer should remain intact.
+                      You can delete the links only if you purchased the pro version.
+                      Licensing information: https://bootstrapmade.com/license/
+                      Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Flattern
+                    -->
+                    Designed by <a href="#">Murangi Vakuna</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span6">
+                <ul class="social-network">
+                  <li><a href="https://www.facebook.com/Murangi10" data-placement="bottom" title="Facebook"><i class="icon-facebook icon-square"></i></a></li>
+                  <li><a href="https://twitter.com/Murangi_10" data-placement="bottom" title="Twitter"><i class="icon-twitter icon-square"></i></a></li>                  
+                  <li><a href="https://www.pinterest.com/baconvakuna/" data-placement="bottom" title="Pinterest"><i class="icon-pinterest icon-square"></i></a></li>                 
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-32 active"></i></a>
+    <!-- javascript
+      ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="{% static 'Home/js/jquery.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.easing.1.3.js' %}"></script>
+    <script src="{% static 'Home/js/bootstrap.js' %}"></script>
+    <script src="{% static 'Home/js/jcarousel/jquery.jcarousel.min.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.fancybox.pack.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.fancybox-media.js' %}"></script>
+    <script src="{% static 'Home/js/google-code-prettify/prettify.js' %}"></script>
+    <script src="{% static 'Home/js/portfolio/jquery.quicksand.js' %}"></script>
+    <script src="{% static 'Home/js/portfolio/setting.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.flexslider.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.nivo.slider.js' %}"></script>
+    <script src="{% static 'Home/js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.ba-cond.min.js' %}"></script>
+    <script src="{% static 'Home/js/jquery.slitslider.js' %}"></script>
+    <script src="{% static 'Home/js/animate.js' %}"></script>
+  
+    <!-- Template Custom JavaScript File -->
+    <script src="{% static 'Home/js/custom.js' %}"></script>
+
+   
+</body>
+</html>

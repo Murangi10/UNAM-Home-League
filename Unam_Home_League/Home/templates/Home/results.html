@@ -1,0 +1,87 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+
+<section id="inner-headline">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="inner-heading">
+            <h2>RESULTS</h2>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </section>
+</section>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        
+        <aside class="left-sidebar">
+          <div class="widget">            
+          </div>
+          <div class="widget">
+            <h5 class="widgetheading"><strong>Table & Fixtures</strong></h5>
+            <ul class="cat">
+              <li><i class="icon-angle-right"></i><a href="{% url 'table' %}">Table</a></li>
+              <li><i class="icon-angle-right"></i><a href="{% url 'fixtures' %}">Fixtures</a></li>             
+            </ul>
+          </div>        
+          
+        </aside>
+      </div>
+      <div class="span8">
+        <article>            
+              </table>
+              <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      
+                        
+                      <th>Home</th>
+                      <th>Score</th>
+                      <th>Away</th>
+                      <th>start_datetime</th>                      
+                      <th></th>
+                    </tr>
+                  </thead>
+                
+                  <tbody>
+                
+                    {% for result in results %}
+                
+                    <tr>
+                      
+                      <td>{{ result.Home }}</td>
+                      <td>{{ result.Score }}</td>
+                      <td>{{ result.Away }}</td>
+                      <td>{{ result.start_datetime }}</td>
+                                         
+                
+                    
+                    </tr>
+                
+                    {% endfor %}
+                  </tbody>
+                </table>              
+          
+        </article>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<br>
+
+<br>
+    {% endblock %}

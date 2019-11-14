@@ -1,0 +1,87 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+
+<section id="inner-headline">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="inner-heading">
+            <h2>FIXTURES</h2>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </section>
+</section>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        
+        <aside class="left-sidebar">
+          <div class="widget">            
+          </div>
+          <div class="widget">
+            <h5 class="widgetheading"><strong>Tables & Results</strong></h5>
+            <ul class="cat">
+              <li><i class="icon-angle-right"></i><a href="{% url 'table' %}">Table</a></li>
+              <li><i class="icon-angle-right"></i><a href="{% url 'results' %}">Results</a></li>             
+            </ul>
+          </div>        
+          
+        </aside>
+      </div>
+      <div class="span8">
+        <article>            
+              </table>
+              <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      
+                        
+                      <th>Home</th>
+                      <th>VS</th>
+                      <th>Away</th>
+                      <th>Stadium</th>
+                      <th>start_datetime</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                
+                  <tbody>
+                
+                    {% for team in teams %}
+                
+                    <tr>
+                      
+                      <td>{{ team.Home }}</td>
+                      <td>{{ team.VS }}</td>
+                      <td>{{ team.Away }}</td>
+                      <td>{{ team.Stadium }}</td>                    
+                      <td>{{ team.start_datetime }}</td>
+                    
+                    </tr>
+                
+                    {% endfor %}
+                  </tbody>
+                </table>              
+          
+        </article>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<br>
+
+<br>
+    {% endblock %}

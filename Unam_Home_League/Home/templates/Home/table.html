@@ -1,0 +1,99 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+
+
+<section id="inner-headline">
+    <div class="container">
+      <div class="row">
+        <div class="span4">
+          <div class="inner-heading">
+            <h2>TABLE</h2>
+          </div>
+        </div>          
+      </div>
+    </div>
+  </section>
+</section>
+<section id="content">
+  <div class="container">
+    <div class="row">
+      <div class="span4">
+        
+        <aside class="left-sidebar">
+          <div class="widget">            
+          </div>
+          <div class="widget">
+            <h5 class="widgetheading"><strong>Fixtures & Results</strong></h5>
+            <ul class="cat">
+              <li><i class="icon-angle-right"></i><a href="{% url 'fixtures' %}">Fixtures</a></li>
+              <li><i class="icon-angle-right"></i><a href="{% url 'results' %}">Results</a></li>             
+            </ul>
+          </div>        
+          
+        </aside>
+      </div>
+      <div class="span8">
+        <article>
+            <h4> <center><strong>LATEST LOG STANDING</strong></center> </h4>
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    
+                      <th>Position</th>
+                    <th>Team</th>
+                    <th>GP</th>
+                    <th>W</th>
+                    <th>D</th>
+                    <th>L</th>
+                    <th>GF</th>
+                    <th>GA</th>
+                    <th>GD</th>
+                    <th>PTS</th>
+                    
+                    <th></th>
+                  </tr>
+                </thead>
+              
+                <tbody>
+              
+                  {% for item in items %}
+              
+                  <tr>
+                    
+                    <td>{{ item.Position }}</td>
+                    <td>{{ item.Team }}</td>
+                    <td>{{ item.GP }}</td>
+                    <td>{{ item.W }}</td>
+                    <td>{{ item.D }}</td>
+                    <td>{{ item.L }}</td>
+                    <td>{{ item.GF }}</td>
+                    <td>{{ item.GA }}</td>
+                    <td>{{ item.GD }}</td>
+                    <td>{{ item.PTS }}</td>
+                    
+              
+                  
+                  </tr>
+              
+                  {% endfor %}
+                </tbody>
+              </table>              
+          
+        </article>
+        
+        
+        
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+<br>
+
+<br>
+    {% endblock %}

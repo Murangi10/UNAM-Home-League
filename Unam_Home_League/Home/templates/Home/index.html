@@ -1,0 +1,423 @@
+{%  extends 'base.html' %}
+{% load static %}
+
+
+{% block body %}
+    <section id="featured">
+      <!-- start slider -->
+      <!-- Slider -->
+      <div id="nivo-slider">
+        <div class="nivo-slider">
+          <!-- Slide #1 image -->
+          <img src="{% static 'Home/img/slides/nivo/City Rangers.JPG' %}" alt="" title="#caption-1" />
+          <!-- Slide #2 image -->
+          <img src="{% static 'Home/img/slides/nivo/Unamt.jpg' %}" alt="" title="#caption-2" />
+          <!-- Slide #3 image -->
+          <img src="{% static 'Home/img/slides/nivo/IMG_8882.JPG' %}" alt="" title="#caption-3" />
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="span12">
+              <!-- Slide #1 caption -->
+              <div class="nivo-caption" id="caption-1">
+                <div>
+                  <h2><strong>2018 CHAMPIONS</strong></h2>
+                  <p>
+                    City Rangers champions of 2019 season
+                  </p>                  
+                </div>
+              </div>
+              <!-- Slide #2 caption -->
+              <div class="nivo-caption" id="caption-2">
+                <div>
+                  <h2> <strong>HOME</strong></h2>
+                  <p>
+                    University of Namibia, home away from home to many students
+                  </p>                  
+                </div>
+              </div>
+              <!-- Slide #3 caption -->
+              <div class="nivo-caption" id="caption-3">
+                <div>
+                  <h2>KICK <strong>OFF</strong></h2>
+                  <p>
+                    The Home League will be kicking off this coming weekend  Many students are so hyped about the kick off
+                  </p>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end slider -->
+    </section>
+    <section class="callaction">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="big-cta">
+              <div class="cta-text">
+                <h3>Welcome to the University of Namibia <span class="highlight"><strong>Football Home League</strong></span> 2019</h3>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="content">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="row">
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-play icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Fixtures</h6>
+                    <p>
+                      Fixtures shown are on your <span>LOCAL TIME.</span>
+                    </p>
+                    <a href="{% url 'fixtures' %}">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-envelope-alt icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Results</h6>
+                    <p>
+                      Results shown are on your LOCAL TIME.
+                    </p>
+                    <a href="{% url 'results' %}">See more</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-table icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Table</h6>
+                    <p>
+                      Latest table standings.
+                    </p>
+                    <a href="{% url 'table' %}">See More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="span3">
+                <div class="box aligncenter">
+                  <div class="aligncenter icon">
+                    <i class="icon-picture icon-circled icon-64 active"></i>
+                  </div>
+                  <div class="text">
+                    <h6>Photo Gallery</h6>
+                    <p>
+                      Some few pictures regarding the UNAM Home League.
+                    </p>
+                    <a href="{% url 'gallery' %}">See more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- divider -->
+        <div class="row">
+          <div class="span12">
+            <div class="solidline">
+            </div>
+          </div>
+        </div>
+        <!-- end divider -->
+        <!-- Portfolio Projects -->
+        <div class="row">
+          <div class="span12">
+            <h4 class="heading">Some of recent <strong>NEWS</strong></h4>
+            <div class="row">
+              <section id="projects">
+                <ul id="thumbs" class="portfolio">
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Second vs Third" href="{% static 'Home/img/works/full/DEZV18212.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/DEZV18212.JPG' %}" alt="Teachers FC takes on City Rangers at home as this will be a big one to decide who takes on second position!">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Friendship" href="{% static 'Home/img/works/full/IMG_9029.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/IMG_9029.JPG' %}" alt="'This is more than just football, we make good friends and familiy and most importantly, it keeps us busy and out of trouble during weekends.' This is what the versitle Camara Tjaronda said when asked about the UNAM Home League.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="100th Red Card" href="{% static 'Home/img/works/full/IMG_8910.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/IMG_8910.JPG' %}" alt="Referee Ombili Shipena recorded his 100th red card in his referee career between a game against UNAM Braves and Chipolopolo.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Suspension completed and back with a bang" href="{% static 'Home/img/works/full/IMG_8917.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/IMG_8917.JPG' %}" alt="Nazeem Achmed Afrikaaner completed his 3 match ban after he recieved a straight red card for spiting his opponent in the mouth in game week 3. He came back with a bang helping his side with a 3-1 win over Tamwa FC, him coming out with 2 assists to his name.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bad Debut" href="{% static 'Home/img/works/full/IMG_8921.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/IMG_8921.JPG' %}" alt="Not the best of debut from the youngster Nguundja of Inter De UNAM after his side lost 2-1 in the opening game against 10 men City Rangers. David Nuyoma got the first goal of the game for De UNAM and Stumbo Mupia later on equilised for the champions for 1-1. Gregg Makari grab a very late winner after a very good individual briliance. ">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Home League Product" href="{% static 'Home/img/works/full/bale.jpg' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/bale.jpg' %}" alt="UNAM FC footballer known as Bale came staright from the UNAM Home League to the premier league team. The Home league can be used to its full potential and scout great talents that can be signed to the big premier league UNAM team.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Ready for play offs" href="{% static 'Home/img/works/full/Catle Country.jpg' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Catle Country.jpg' %}" alt="Cattle Country FC that got relegated in the 2014 season are ready to get back in the UNAM Home League as they will be playing play-offs against one of the three relegated teams this season.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Main Campus Varsity Tournament Runners-Up" href="{% static 'Home/img/works/full/Main Campus.JPG' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Main Campus.JPG' %}" alt="University of Namibia Main Campus team that took part in the Varsity Tournament this year lost 3-0 in the Final agaisnt NUST. The main campus team consisted of players that were selected from the Home League to come represent the main campus. Campuses from around Namibia come to participate in this tournment.">
+                  </li>
+                  <!-- End Item Project -->
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- End Portfolio Projects -->
+
+        <div class="row">
+          <div class="span12">
+            <h4 class="heading"> <strong>TEAMS</strong></h4>
+            <div class="row">
+              <section id="projects">
+                <ul id="thumbs" class="portfolio">
+                 
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Military School Football Club" href="{% static 'Home/img/works/full/Military School.png' %}">
+                     
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Military School.png' %}" alt="POSITION:13th  P:9  W:1  D:2  L:6  GF:9  GA:16  GD:-7  PIONTS:5"  href="{% url 'military' %}">
+                 
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Inter De UNAM Football Club" href="{% static 'Home/img/works/full/Inter De UNAM FC.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Inter De UNAM FC.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="People Football Club" href="{% static 'Home/img/works/full/People FC.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/People FC.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+
+                 
+                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="UNAM Braves Football Club" href="{% static 'Home/img/works/full/UNAM Braves FC.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/UNAM Braves FC.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+                   <!-- Item Project and Filter Name -->
+                   <li class="item-thumbs span3 design" data-id="id-0" data-type="web" width="10" height="10">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Bima Football Club"  href="{% static 'Home/img/works/full/Bima.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Bima.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Chipolopolo Football Club" href="{% static 'Home/img/works/full/Chipolopolo.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Chipolopolo.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="City Rangers Football Club" href="{% static 'Home/img/works/full/City Rangers FC.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/City Rangers FC.png' %}" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+                  <!-- Item Project and Filter Name -->
+                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
+                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Fly Zone Football Club" href="{% static 'Home/img/works/full/Fly Zone FC.png' %}">
+						<span class="overlay-img"></span>
+						<span class="overlay-img-thumb font-icon-plus"></span>
+						</a>
+                    <!-- Thumb Image and Description -->
+                    <img src="{% static 'Home/img/works/thumbs/Fly Zone FC.png' %}"  alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                  </li>
+                  <!-- End Item Project -->
+                  
+                 
+                  <!-- End Item Project -->
+                </ul>
+              </section>
+            </div>
+          </div>
+        </div>
+        <!-- End Portfolio Projects -->
+
+        <!-- divider -->
+        <div class="row">
+          <div class="span12">
+            <div class="solidline">
+            </div>
+          </div>
+        </div>
+        <!-- end divider -->
+        <div class="row">
+          <div class="span12">
+            <h4>Our <strong>SPNONSORS</strong></h4>
+            <ul id="mycarousel" class="jcarousel-skin-tango recent-jcarousel clients">
+              <li>
+                <a href="http://www.unam.edu.na/">
+					<img src="{% static 'Home/img/dummies/clients/logo.png' %}" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="https://pynamibia.org/">
+					<img src="{% static 'Home/img/dummies/clients/pynamlogo_black.png' %}" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="https://www.python.org/">
+					<img src="{% static 'Home/img/dummies/clients/psf-logo.png.jpg' %}" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                <a href="https://www.djangoproject.com/">
+					<img src="{% static 'Home/img/dummies/clients/django-logo-big.jpg' %}" class="client-logo" alt="" />
+					</a>
+              </li>
+              <li>
+                  <a href="http://www.unam.edu.na/">
+            <img src="{% static 'Home/img/dummies/clients/logo.png' %}" class="client-logo" alt="" />
+            </a>
+                </li>
+                <li>
+                  <a href="https://pynamibia.org/">
+            <img src="{% static 'Home/img/dummies/clients/pynamlogo_black.png' %}" class="client-logo" alt="" />
+            </a>
+                </li>
+                <li>
+                  <a href="https://www.python.org/">
+            <img src="{% static 'Home/img/dummies/clients/psf-logo.png.jpg' %}" class="client-logo" alt="" />
+            </a>
+                </li>
+                <li>
+                  <a href="https://www.djangoproject.com/">
+            <img src="{% static 'Home/img/dummies/clients/django-logo-big.jpg' %}" class="client-logo" alt="" />
+            </a>
+                </li>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="span12">
+            <div class="aligncenter">
+              <div id="twitter-wrapper">
+                <div id="twitter">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+{%  endblock %}
+ 
